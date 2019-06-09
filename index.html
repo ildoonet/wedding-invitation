@@ -75,7 +75,7 @@
 				</div>
 
 				<div class="box container">
-					<h3>저희 예쁜 사진 더 보기</h3>
+					<h3>예쁜 사진 더 보기</h3>
 					<div class="row" style="padding-top: 25px; padding-left: 30px;">
 						<div class="col-4" style="padding: 0px;"><img src="images/small/DSC06225.jpg" width=100% height=100%/></div>
 						<div class="col-4" style="padding: 0px;"><img src="images/small/DSC05904.jpg" width=100% height=100%/></div>
@@ -85,9 +85,9 @@
 						<div class="col-4" style="padding: 0px;"><img src="images/small/DSC05782.jpg" width=100% height=100%/></div>
 					</div>
 
-					<!-- <ul class="actions special" style="padding-top:1.5em;">
-						<li><a href="#" class="button icon fa-instagram">인스타그램</a></li>
-					</ul> -->
+					<ul class="actions special" style="padding-top:1.5em;">
+						<li><a href="https://instagram.com/curtis._.olivia" class="button icon fa-instagram">인스타그램</a></li>
+					</ul>
 				</div>
 
 				<footer class="major container medium">
@@ -117,13 +117,14 @@
 						<h2>오시는 길.</h2>
 					</header>
 
-					<p>서울특별시 중구 필동로5길 7 라비두스</p>
+					<p><center>서울특별시 중구 필동로5길 7 라비두스</center></p>
 
 					<form method="post" action="#">
 						<div class="row">
 
 							<div class="col-12">
-								<div id="map" style="width:100%;height:300px; margin-bottom:1em;"></div>
+								<a href="./images/wedding-map.jpg"><img src="./images/wedding-map.jpg" width=100%></a>
+								<!-- <div id="map" style="width:100%;height:300px; margin-bottom:1em;"></div> -->
 							</div>
 						</div>
 
@@ -133,7 +134,7 @@
 							<h3>교통 안내</h3>
 						</header>
 						<div class="table-wrapper">
-							<table class="default">
+							<table class="default" style="text-align:left;">
 								<!-- <thead>
 									<tr>
 										<th>ID</th>
@@ -153,7 +154,8 @@
 										<td>3,4호선 충무로역 1번 출구 앞<br/> 셔틀버스 이용(3분 간격 운행)</td>
 									</tr>
 									<tr>
-										<td colspan="2">※ 셔틀버스는 예식 1시간 전부터<br/>예식시간까지 운행됩니다</td>
+										<td></td>
+										<td style="text-align:left;">※ 셔틀버스는 예식 1시간 전부터<br/>예식시간까지 운행됩니다</td>
 									</tr>
 									<tr>
 										<td>버스</td>
@@ -173,7 +175,7 @@
 							<div class="col-12">
 								<ul class="actions special">
 									<li><input type="submit" value="카카오네비 길안내" /></li>
-									<li><input type="submit" value="주소 복사하기" onclick="copyToClipboard('서울 중구 필동로5길 7')" /></li>
+									<li><input type="submit" value="라비두스 주소 복사하기" onclick="copyToClipboard('서울 중구 필동로5길 7')" /></li>
 								</ul>
 							</div>
 						</div>
@@ -183,8 +185,7 @@
 
 					<ul class="icons">
 						<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://github.com/ildoonet" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://instagram.com/curtis._.olivia" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
 
 					<ul class="copyright">
@@ -230,6 +231,7 @@
 				  t.select();
 				  document.execCommand('copy');
 				  document.body.removeChild(t);
+					alert('복사되었습니다! 늦지 않게 뵈어요!');
 				}
 
 				//<![CDATA[
