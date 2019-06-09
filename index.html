@@ -15,7 +15,6 @@
 
 		<link rel="stylesheet" href="assets/css/main.css" />
 
-		<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qwb2apno6e"></script>
 		<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 	</head>
@@ -178,8 +177,8 @@
 						<div class="row">
 							<div class="col-12">
 								<ul class="actions special">
-									<li><input type="submit" value="카카오네비 길안내" onclick="navi();" /></li>
-									<li><input type="submit" value="라비두스 주소 복사하기" onclick="copyToClipboard('서울 중구 필동로5길 7')" /></li>
+									<li><input type="submit" value="카카오네비 길안내" onclick="navi(); return false;" /></li>
+									<li><input type="submit" value="라비두스 주소 복사하기" onclick="copyToClipboard('서울 중구 필동로5길 7'); return false;" /></li>
 								</ul>
 							</div>
 						</div>
@@ -207,26 +206,6 @@
 			<script src="assets/js/main.js"></script>
 
 			<script>
-				var HOME_PATH = window.HOME_PATH || '.';
-
-				var mapOptions = {
-				    center: new naver.maps.LatLng(37.556611, 126.996247),
-						mapDataControl: false,
-						zoomControl: true,
-				    zoom: 12
-				};
-				var map = new naver.maps.Map('map', mapOptions);
-
-				var marker = new naver.maps.Marker({
-				    position: new naver.maps.LatLng(37.55692, 126.996327),
-						icon: {
-				        url: HOME_PATH + '/images/wedding-icon.png',
-				        size: new naver.maps.Size(50, 52),
-				        origin: new naver.maps.Point(0, 0),
-				        anchor: new naver.maps.Point(25, 26)
-				    },
-				    map: map
-				});
 
 				function copyToClipboard(val) {
 				  var t = document.createElement("textarea");
@@ -236,6 +215,7 @@
 				  document.execCommand('copy');
 				  document.body.removeChild(t);
 					alert('복사되었습니다! 늦지 않게 뵈어요!');
+					return true;
 				}
 
 				//<![CDATA[
@@ -249,6 +229,7 @@
 			            y: 126.996327,
 			            coordType: 'wgs84'
 			        });
+							return true;
 			    }
 			  //]]>
 			</script>
