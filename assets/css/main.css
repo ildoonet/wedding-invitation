@@ -2691,7 +2691,7 @@ input, select, textarea {
 
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("images/DSC05711.jpg");
+		background-image: url("images/top-3200.svg"), url("images/DSC05904.jpg");
 		background-position: bottom center,					top center,				center center;
 		background-repeat: repeat-x,						no-repeat,					no-repeat;
 		background-size: 3200px 460px,					cover,					cover;
@@ -3007,7 +3007,7 @@ input, select, textarea {
 
 			#header {
 				background-attachment: scroll,							scroll,							scroll;
-				background-image: url("images/top-1600.svg"), url("images/DSC05711.jpg");
+				background-image: url("images/top-1600.svg"), url("images/DSC05904.jpg");
 				background-size: 1600px 230px,					cover,							cover;
 				padding: 35% 0 12em 0;
 			}
@@ -3159,7 +3159,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-image: url("images/top-1280.svg"), url("images/DSC05711.jpg");
+				background-image: url("images/top-1280.svg"), url("images/DSC05904.jpg");
 				background-size: 1280px 184px,						cover,							cover;
 				padding: 3em 0 7em 0;
 			}
